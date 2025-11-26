@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>JRF – CDC Lab IIT Bombay | Sarthak Sahoo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="page">
+  <header>
+    <nav class="top-nav">
+      <div class="nav-links">
+        <a href="index.html#experience">← Back to experience</a>
+      </div>
+      <button id="theme-toggle" class="toggle-theme" type="button" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+  <main>
+    <article class="detail">
+      <h1>Junior Research Fellow – Continuum Dynamics &amp; Control Lab</h1>
+      <p class="meta-line">IIT Bombay · Feb 2025 – Present · Advisor: Prof. Vivek Natarajan</p>
+      <img class="detail-image" src="images/exp-jrf-cdc.jpg" alt="CDC lab" />
+
+      <p>
+        As a JRF at the CDC Lab, I work on trajectory control of one-dimensional
+        flexible structures, with a focus on Euler–Bernoulli beams.
+      </p>
+      <ul>
+        <li>Develop FEM models of beams using Hermite shape functions and validate natural frequencies against analytical estimates.</li>
+        <li>Build Simscape Multibody models and compare them with Simulink implementations to study discretisation effects on phase and amplitude.</li>
+        <li>Design a laser-based displacement measurement system with LabVIEW, NI hardware, current-to-voltage converters, and Chebyshev filters.</li>
+        <li>Use FFT-based techniques to estimate mode shapes and damping from experimental data.</li>
+      </ul>
+
+      <p>
+        The long-term goal is closed-loop vibration control using distributed
+        sensing and actuation.
+      </p>
+
+      <p><a class="btn" href="index.html#experience">Back to main page</a></p>
+    </article>
+  </main>
+  <footer>&copy; <span id="year"></span> Sarthak Sahoo</footer>
+</div>
+
+<script>
+(function () {
+  const body = document.body;
+  const btn = document.getElementById("theme-toggle");
+  function setTheme(mode) {
+    if (mode === "dark") { body.classList.add("dark"); btn.textContent = "☀️"; }
+    else { body.classList.remove("dark"); btn.textContent = "🌙"; }
+    localStorage.setItem("theme", mode);
+  }
+  const saved = localStorage.getItem("theme");
+  setTheme(saved === "dark" ? "dark" : "light");
+  btn.addEventListener("click", () => {
+    setTheme(body.classList.contains("dark") ? "light" : "dark");
+  });
+  document.getElementById("year").textContent =
+    new Date().getFullYear().toString();
+})();
+</script>
+
+</body>
+</html>

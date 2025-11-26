@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>CDPR – ICC 2024 | Sarthak Sahoo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page">
+    <header>
+      <nav class="top-nav">
+        <div class="nav-links">
+          <a href="index.html#publications">← Back to publications</a>
+        </div>
+        <button id="theme-toggle" class="toggle-theme" type="button" aria-label="Toggle dark mode">🌙</button>
+      </nav>
+    </header>
+
+    <main>
+      <article class="detail">
+        <h1>Design, Fabrication and Control of a Cable-Driven Parallel Robot</h1>
+        <p class="meta-line">
+          Dhruv Sorathiya, Sarthak Sahoo, Vivek Natarajan · 10th Indian Control Conference (ICC 2024)
+        </p>
+        <img class="detail-image" src="images/pub-cdpr.jpg" alt="CDPR experimental setup" />
+
+        <p>
+          This work presents the complete pipeline of building a planar
+          cable-driven parallel robot (CDPR) from scratch and experimentally
+          validating its motion control.
+        </p>
+        <ul>
+          <li>Formulated kinematics and dynamics for an underactuated CDPR with three cables.</li>
+          <li>Designed the robot structure and winch assembly in SolidWorks and fabricated the setup using aluminum profiles and 3D-printed fixtures.</li>
+          <li>Performed motor sizing for low-speed smooth operation and integrated encoders for feedback.</li>
+          <li>Implemented trajectory-tracking controllers in MATLAB/Simulink and validated them on the physical platform.</li>
+        </ul>
+
+        <p>
+          The resulting platform continues to be used in the CDC Lab for
+          experimental studies on nonlinear control and trajectory planning.
+        </p>
+
+        <p>
+          <a class="btn" href="index.html#publications">Back to main page</a>
+        </p>
+      </article>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Sarthak Sahoo
+    </footer>
+  </div>
+  
+<script>
+(function () {
+  const body = document.body;
+  const btn = document.getElementById("theme-toggle");
+  function setTheme(mode) {
+    if (mode === "dark") { body.classList.add("dark"); btn.textContent = "☀️"; }
+    else { body.classList.remove("dark"); btn.textContent = "🌙"; }
+    localStorage.setItem("theme", mode);
+  }
+  const saved = localStorage.getItem("theme");
+  setTheme(saved === "dark" ? "dark" : "light");
+  btn.addEventListener("click", () => {
+    setTheme(body.classList.contains("dark") ? "light" : "dark");
+  });
+  document.getElementById("year").textContent =
+    new Date().getFullYear().toString();
+})();
+</script>
+
+</body>
+</html>

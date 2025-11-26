@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Education – NIT Rourkela | Sarthak Sahoo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="page">
+  <header>
+    <nav class="top-nav">
+      <div class="nav-links">
+        <a href="index.html#education">← Back to education</a>
+      </div>
+      <button id="theme-toggle" class="toggle-theme" type="button" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+  <main>
+    <article class="detail">
+      <h1>B.Tech in Mechanical Engineering</h1>
+      <p class="meta-line">National Institute of Technology, Rourkela · 2020 – 2024 · CGPA 8.87/10</p>
+      <img class="detail-image" src="images/edu-nitr.jpg" alt="NITR campus" />
+
+      <p>
+        My undergraduate studies built a strong foundation in classical
+        mechanics, design, and control, while my project work pulled me towards
+        robotics and autonomous systems.
+      </p>
+      <ul>
+        <li>Key courses: System Dynamics and Control, Mechanical Vibrations, Mechatronics, Dynamics of Machines, Finite Element Method.</li>
+        <li>Member of AUV Team Tiburon and Team BlueStreak (ASME e-HPVC).</li>
+        <li>Held mentoring and leadership roles, including Training Coordinator for the Career Development Center.</li>
+      </ul>
+
+      <p><a class="btn" href="index.html#education">Back to main page</a></p>
+    </article>
+  </main>
+  <footer>&copy; <span id="year"></span> Sarthak Sahoo</footer>
+</div>
+
+<script>
+(function () {
+  const body = document.body;
+  const btn = document.getElementById("theme-toggle");
+  function setTheme(mode) {
+    if (mode === "dark") { body.classList.add("dark"); btn.textContent = "☀️"; }
+    else { body.classList.remove("dark"); btn.textContent = "🌙"; }
+    localStorage.setItem("theme", mode);
+  }
+  const saved = localStorage.getItem("theme");
+  setTheme(saved === "dark" ? "dark" : "light");
+  btn.addEventListener("click", () => {
+    setTheme(body.classList.contains("dark") ? "light" : "dark");
+  });
+  document.getElementById("year").textContent =
+    new Date().getFullYear().toString();
+})();
+</script>
+
+</body>
+</html>

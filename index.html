@@ -4,216 +4,27 @@
   <meta charset="UTF-8" />
   <title>Sarthak Sahoo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta
-    name="description"
-    content="Portfolio of Sarthak Sahoo – Mechanical engineer focusing on robotics, dynamics, and control."
-  />
-  <style>
-    :root {
-      --bg: #f9fafb;
-      --fg: #111827;
-      --accent: #2563eb;
-      --muted: #4b5563;
-      --border: #e5e7eb;
-      --link-hover: #1d4ed8;
-    }
-
-    * {
-      box-sizing: border-box;
-    }
-
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
-        sans-serif;
-      background: var(--bg);
-      color: var(--fg);
-      line-height: 1.6;
-    }
-
-    a {
-      color: var(--accent);
-      text-decoration: none;
-    }
-
-    a:hover {
-      text-decoration: underline;
-      color: var(--link-hover);
-    }
-
-    .page {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 2rem 1.25rem 3rem;
-    }
-
-    header {
-      margin-bottom: 2rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 1.5rem;
-    }
-
-    nav {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-      margin-bottom: 1.5rem;
-      font-size: 0.95rem;
-    }
-
-    nav a {
-      padding: 0.25rem 0.6rem;
-      border-radius: 999px;
-      background: white;
-      border: 1px solid var(--border);
-    }
-
-    h1 {
-      font-size: 2.1rem;
-      margin: 0 0 0.5rem;
-    }
-
-    .tagline {
-      max-width: 720px;
-      font-size: 0.98rem;
-      color: var(--muted);
-      margin-bottom: 0.75rem;
-    }
-
-    .contact-line {
-      font-size: 0.95rem;
-      margin-bottom: 1rem;
-    }
-
-    .contact-line span {
-      margin: 0 0.15rem;
-    }
-
-    .hero {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.5rem;
-      align-items: center;
-    }
-
-    .hero-text {
-      flex: 2 1 260px;
-    }
-
-    .hero-photo {
-      flex: 0 0 160px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .hero-photo img {
-      width: 160px;
-      height: 160px;
-      object-fit: cover;
-      border-radius: 999px;
-      border: 2px solid var(--border);
-      background: #e5e7eb;
-    }
-
-    main section {
-      margin-bottom: 2rem;
-    }
-
-    main h2 {
-      font-size: 1.4rem;
-      margin: 1.5rem 0 0.5rem;
-      border-bottom: 1px solid var(--border);
-      padding-bottom: 0.3rem;
-    }
-
-    main h3 {
-      font-size: 1.05rem;
-      margin: 1rem 0 0.2rem;
-    }
-
-    .meta-line {
-      font-size: 0.9rem;
-      color: var(--muted);
-      margin-bottom: 0.4rem;
-    }
-
-    ul {
-      padding-left: 1.2rem;
-      margin-top: 0.1rem;
-    }
-
-    li + li {
-      margin-top: 0.15rem;
-    }
-
-    .keywords {
-      font-size: 0.85rem;
-      color: var(--muted);
-      margin-top: 0.25rem;
-    }
-
-    .two-column {
-      display: grid;
-      grid-template-columns: minmax(0, 1.2fr) minmax(0, 1.1fr);
-      gap: 1.5rem;
-    }
-
-    .pill-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-      margin-top: 0.4rem;
-      padding-left: 0;
-      list-style: none;
-    }
-
-    .pill-list li {
-      font-size: 0.85rem;
-      padding: 0.15rem 0.55rem;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-      background: white;
-    }
-
-    .subheading {
-      font-weight: 600;
-      margin-top: 0.6rem;
-      margin-bottom: 0.2rem;
-    }
-
-    .small {
-      font-size: 0.9rem;
-    }
-
-    footer {
-      border-top: 1px solid var(--border);
-      padding-top: 1rem;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
-
-    @media (max-width: 720px) {
-      .two-column {
-        grid-template-columns: minmax(0, 1fr);
-      }
-    }
-  </style>
+  <meta name="description"
+        content="Portfolio of Sarthak Sahoo – Mechanical engineer focusing on robotics, dynamics, and control." />
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="page">
     <header id="about">
-      <nav>
-        <a href="#about">About</a>
-        <a href="#news">News</a>
-        <a href="#publications">Publications</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects &amp; research</a>
-        <a href="#education">Education</a>
-        <a href="#coursework">Coursework</a>
-        <a href="#skills">Skills</a>
-        <a href="#leadership">Leadership</a>
-        <a href="#contact">Contact</a>
+      <nav class="top-nav">
+        <div class="nav-links">
+          <a href="#about">About</a>
+          <a href="#news">News</a>
+          <a href="#publications">Publications</a>
+          <a href="#experience">Experience</a>
+          <a href="#projects">Projects</a>
+          <a href="#education">Education</a>
+          <a href="#coursework">Coursework</a>
+          <a href="#skills">Skills</a>
+          <a href="#leadership">Leadership</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <button id="theme-toggle" class="toggle-theme" type="button" aria-label="Toggle dark mode">🌙</button>
       </nav>
 
       <div class="hero">
@@ -221,54 +32,28 @@
           <h1>Sarthak Sahoo</h1>
           <p class="tagline">
             Mechanical engineer and researcher interested in robotics, dynamics,
-            and control. My work spans flexible-structure modelling, cable-driven
-            parallel robots, and mechatronic systems for manufacturing and
-            inspection.
+            and control. I enjoy taking systems from equations on paper to real
+            hardware, with a focus on flexible structures, cable-driven robots,
+            and mechatronic systems.
           </p>
 
           <div class="contact-line">
-            <span>
-              <a href="mailto:sarthaks.mech2024@gmail.com">Email</a>
-            </span>
-            /
-            <span>
-              <a
-                href="https://www.linkedin.com/in/sarthak-sahoo-mechanical/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >LinkedIn</a
-              >
-            </span>
-            /
-            <span>
-              <a
-                href="https://github.com/S-SARTHAK1999"
-                target="_blank"
-                rel="noopener noreferrer"
-                >GitHub</a
-              >
-            </span>
-            /
-            <span>
-              <a
-                href="MastersResume_SarthakSahoo_AF%20-%20v3.9.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
-                >CV (PDF)</a
-              >
-            </span>
+            <span><a href="mailto:sarthaks.mech2024@gmail.com">Email</a></span> /
+            <span><a href="https://www.linkedin.com/in/sarthak-sahoo-mechanical/" target="_blank" rel="noopener noreferrer">LinkedIn</a></span> /
+            <span><a href="https://github.com/S-SARTHAK1999" target="_blank" rel="noopener noreferrer">GitHub</a></span> /
+            <span><a href="MastersResume_SarthakSahoo_AF%20-%20v3.9.pdf" target="_blank" rel="noopener noreferrer">CV (PDF)</a></span>
           </div>
 
           <p class="small">
-            I enjoy turning mathematical models into real hardware: building
-            robots, integrating sensors, and validating control strategies
-            through experiments.
+            Currently working at the interface of continuum mechanics and
+            control, with experience spanning research labs and high-volume
+            manufacturing.
           </p>
         </div>
 
         <div class="hero-photo">
-          <!-- Replace sarthak-photo.jpg with your actual photo file name -->
-          <img src="sarthak-photo.jpg" alt="Photo of Sarthak Sahoo" />
+          <!-- Replace with your real face photo -->
+          <img src="images/sarthak-portrait.jpg" alt="Photo of Sarthak Sahoo" />
         </div>
       </div>
     </header>
@@ -277,303 +62,287 @@
       <!-- News -->
       <section id="news">
         <h2>News</h2>
-        <p class="small">Selected updates.</p>
         <ul>
-          <li>
-            Feb 2025 – Joined the Continuum Dynamics &amp; Control Lab at IIT
-            Bombay as a Junior Research Fellow (Trajectory Control of 1D
-            Flexible Structures).
-          </li>
-          <li>
-            Aug 2024 – Started as Graduate Trainee Engineer in Manufacturing
-            Engineering (Engine team) at Bajaj Auto Limited, Pune.
-          </li>
-          <li>
-            Jan 2024 – Awarded the IRCC IIT Bombay Research Fellowship for a
-            6-month project on cable-driven parallel robots.
-          </li>
-          <li>
-            Mar 2024 – Team QO9D recognised as National Runners-Up in the OHM
-            Challenge for an EV battery-swapping control framework.
-          </li>
-          <li>
-            Apr 2023 – Led Team BlueStreak 10.0 to National Runners-Up in the
-            Critical Design Report at ASME e-HPVC India.
-          </li>
+          <li>Feb 2025 – Joined the Continuum Dynamics &amp; Control Lab at IIT Bombay as a Junior Research Fellow.</li>
+          <li>Aug 2024 – Started as Graduate Trainee Engineer in Manufacturing Engineering (Engine team) at Bajaj Auto, Pune.</li>
+          <li>Jan 2024 – Awarded the IRCC IIT Bombay Research Fellowship for a project on cable-driven parallel robots.</li>
+          <li>Apr 2023 – Led Team BlueStreak 10.0 to National Runners-Up in the Critical Design Report at ASME e-HPVC India.</li>
         </ul>
       </section>
 
-      <!-- Publications -->
+      <!-- Publications & Patent -->
       <section id="publications">
         <h2>Publications &amp; patents</h2>
 
-        <h3>
-          Design, Fabrication and Control of a Cable-Driven Parallel Robot
-        </h3>
-        <p class="meta-line">
-          Dhruv Sorathiya, Sarthak Sahoo, Vivek Natarajan – 10th Indian Control
-          Conference (ICC 2024), IISER Bhopal.
-        </p>
-        <p class="small">
-          Experimental work on designing, fabricating, and controlling an
-          underactuated CDPR, with results presented at ICC 2024 and
-          demonstrated at TechConnect IIT Bombay.
-        </p>
+        <article class="item">
+          <div class="item-text">
+            <h3>Design, Fabrication and Control of a Cable-Driven Parallel Robot</h3>
+            <p class="meta-line">
+              Dhruv Sorathiya, Sarthak Sahoo, Vivek Natarajan – 10th Indian Control Conference (ICC 2024)
+            </p>
+            <p class="small">
+              Experimental study of an underactuated cable-driven parallel robot, from CAD design and
+              fabrication to trajectory-tracking experiments and control.
+            </p>
+            <div class="item-actions">
+              <a class="btn" href="publication-cdpr-icc.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/pub-cdpr.jpg" alt="CDPR setup" />
+          </div>
+        </article>
 
-        <h3>
-          Assistive Robotic System and Method for enhancing social skills in
-          users with autism spectrum disorder
-        </h3>
-        <p class="meta-line">
-          Indian Patent Application No. 202531062319 (Filed 30 June 2025).
-        </p>
-        <p class="small">
-          Contributed to the design of an interactive dual-arm mobile social
-          robot to support social skill development for autistic users.
-        </p>
+        <article class="item">
+          <div class="item-text">
+            <h3>Assistive Robotic System for users with autism spectrum disorder</h3>
+            <p class="meta-line">
+              Indian Patent Application No. 202531062319 · Filed June 2025
+            </p>
+            <p class="small">
+              Design of an interactive dual-arm mobile robot to support social skill development
+              in autistic users through structured play and engagement.
+            </p>
+            <div class="item-actions">
+              <a class="btn" href="patent-assistive-robot.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/patent-assistive-robot.jpg" alt="Assistive robot concept" />
+          </div>
+        </article>
       </section>
 
       <!-- Experience -->
       <section id="experience">
         <h2>Industry &amp; research experience</h2>
 
-        <h3>Junior Research Fellow – Continuum Dynamics &amp; Control Lab</h3>
-        <p class="meta-line">
-          IIT Bombay · Feb 2025 – Present · Advisor: Prof. Vivek Natarajan
-        </p>
-        <ul>
-          <li>
-            Numerically model Euler–Bernoulli beams with FEM (Hermite shape
-            functions) and perform modal analysis in Python to estimate natural
-            frequencies with high accuracy.
-          </li>
-          <li>
-            Integrate industrial laser displacement sensing with LabVIEW for
-            real-time vibration measurement, using FFT-based analysis and
-            Chebyshev filtering for noise suppression.
-          </li>
-          <li>
-            Build Simscape Multibody models of thin beams and compare them with
-            analytical Simulink models to study phase and amplitude errors under
-            varying discretisation.
-          </li>
-        </ul>
-        <p class="keywords">
-          Keywords: flexible structures, FEM, vibrations, LabVIEW, Simscape
-        </p>
+        <article class="item">
+          <div class="item-text">
+            <h3>Junior Research Fellow – Continuum Dynamics &amp; Control Lab</h3>
+            <p class="meta-line">
+              IIT Bombay · Feb 2025 – Present · Advisor: Prof. Vivek Natarajan
+            </p>
+            <p class="small">
+              Modelling and control of Euler–Bernoulli beams with distributed sensing. Building
+              a laser-based vibration measurement setup and validating FEM–based models with
+              experimental data.
+            </p>
+            <div class="item-actions">
+              <a class="btn" href="experience-jrf-cdc.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/exp-jrf-cdc.jpg" alt="CDC lab photo" />
+          </div>
+        </article>
 
-        <h3>
-          Graduate Trainee Engineer – Manufacturing Engineering (Engine Team)
-        </h3>
-        <p class="meta-line">
-          Bajaj Auto Limited, Pune · Aug 2024 – Dec 2024
-        </p>
-        <ul>
-          <li>
-            Improved tool life of a spring-plunger inductive proximity sensor
-            poka-yoke for woodruff key detection by redesigning spring stiffness
-            and analysing GD&amp;T tolerances.
-          </li>
-          <li>
-            Enhanced reliability of a valve collet press inspection station via
-            detailed function analysis, tolerance study, SPC on production data,
-            and laser sensor re-calibration.
-          </li>
-          <li>
-            Reduced fuel leak-test cycle time from 21&nbsp;s to 17&nbsp;s by
-            optimising pneumatic logic and pressure-settling.
-          </li>
-        </ul>
-        <p class="keywords">
-          Keywords: manufacturing, poka-yoke, SPC, TPM, PQCDSME
-        </p>
+        <article class="item">
+          <div class="item-text">
+            <h3>Graduate Trainee Engineer – Manufacturing Engineering (Engine Team)</h3>
+            <p class="meta-line">
+              Bajaj Auto Limited, Pune · Aug 2024 – Dec 2024
+            </p>
+            <p class="small">
+              Worked on poka-yoke reliability, leak-test cycle-time reduction, and quality
+              improvement for engine assembly stations using SPC and GD&amp;T analysis.
+            </p>
+            <div class="item-actions">
+              <a class="btn" href="experience-bajaj-gte.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/exp-bajaj-gte.jpg" alt="Engine assembly line" />
+          </div>
+        </article>
 
-        <h3>Project Research Intern – Continuum Dynamics &amp; Control Lab</h3>
-        <p class="meta-line">
-          IIT Bombay · Jan 2024 – Jun 2024 · IRCC Research Fellowship
-        </p>
-        <ul>
-          <li>
-            Designed an underactuated cable-driven parallel robot in SolidWorks,
-            considering workspace geometry, DOFs, and actuator placement, and
-            fabricated the setup with Dyneema cables and 3D-printed fixtures.
-          </li>
-          <li>
-            Performed motor sizing and trajectory-tracking experiments with
-            step, ramp, and sinusoidal inputs using encoder feedback and
-            Arduino/Python DAQ.
-          </li>
-          <li>
-            Simulated unplanned high-speed trajectories in MATLAB/Simulink to
-            analyse open-loop behaviour and stability.
-          </li>
-        </ul>
-        <p class="keywords">
-          Keywords: CDPRs, SolidWorks, MATLAB/Simulink, motion control
-        </p>
+        <article class="item">
+          <div class="item-text">
+            <h3>Project Research Intern – Continuum Dynamics &amp; Control Lab</h3>
+            <p class="meta-line">
+              IIT Bombay · Jan 2024 – Jun 2024 · IRCC Research Fellowship
+            </p>
+            <p class="small">
+              Designed, fabricated, and experimentally characterised an underactuated
+              cable-driven parallel robot (CDPR) for planar motion control.
+            </p>
+            <div class="item-actions">
+              <a class="btn" href="experience-cdpr-intern.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/exp-cdpr-intern.jpg" alt="Cable-driven robot" />
+          </div>
+        </article>
 
-        <h3>Research Intern – School of Mechanical Sciences</h3>
-        <p class="meta-line">
-          IIT Bhubaneswar · Dec 2023 – Dec 2023 · Advisor: Prof. Pandu Ranga V
-        </p>
-        <ul>
-          <li>
-            Modelled a 4-DOF dual-arm robotic system in Simscape Multibody and
-            SolidWorks.
-          </li>
-          <li>
-            Derived and validated forward kinematics with DH parameters and
-            Python scripts for collaborative control studies.
-          </li>
-        </ul>
-        <p class="keywords">
-          Keywords: dual-arm robots, kinematics, Simscape
-        </p>
+        <article class="item">
+          <div class="item-text">
+            <h3>Research Intern – School of Mechanical Sciences</h3>
+            <p class="meta-line">
+              IIT Bhubaneswar · Dec 2023 – Dec 2023 · Advisor: Prof. Pandu Ranga V
+            </p>
+            <p class="small">
+              Built a 4-DOF dual-arm robot model in Simscape Multibody and validated
+              its kinematics using DH parameters and Python scripts.
+            </p>
+            <div class="item-actions">
+              <a class="btn" href="experience-iitbbs-intern.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/exp-iitbbs.jpg" alt="Dual arm robot model" />
+          </div>
+        </article>
 
-        <h3>Summer Octane Intern – Manufacturing Engineering</h3>
-        <p class="meta-line">
-          Bajaj Auto Limited, Pune · May 2023 – Jul 2023
-        </p>
-        <ul>
-          <li>
-            Mapped material and information flow across Pulsar assembly
-            conveyors and audited 20+ poka-yoke mechanisms for better
-            traceability.
-          </li>
-          <li>
-            Standardised digital dashboards and line-stage displays to support
-            real-time quality monitoring on the MES.
-          </li>
-          <li>
-            Received a pre-placement offer for contributions to digital
-            manufacturing initiatives.
-          </li>
-        </ul>
-        <p class="keywords">
-          Keywords: MES, process mapping, digital manufacturing
-        </p>
+        <article class="item">
+          <div class="item-text">
+            <h3>Summer Octane Intern – Manufacturing Engineering</h3>
+            <p class="meta-line">
+              Bajaj Auto Limited, Pune · May 2023 – Jul 2023
+            </p>
+            <p class="small">
+              Mapped material and information flow on Pulsar assembly lines,
+              audited poka-yokes, and supported digital MES dashboards for real-time quality.
+            </p>
+            <div class="item-actions">
+              <a class="btn" href="experience-bajaj-summer.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/exp-bajaj-summer.jpg" alt="Motorcycle assembly line" />
+          </div>
+        </article>
 
-        <h3>
-          Undergraduate Research Assistant – Machine Intelligence &amp;
-          Bio-Motion Lab
-        </h3>
-        <p class="meta-line">
-          NIT Rourkela · Nov 2023 – Jun 2024 · Advisor: Dr. Anup Nandy
-        </p>
-        <ul>
-          <li>
-            Helped design and prototype a wheeled dual-arm social robot with
-            3D-printed chassis and 2-DOF manipulation for assistive interaction.
-          </li>
-          <li>
-            Supported actuator–sensor integration and experimental evaluation,
-            contributing to a filed Indian patent on assistive robotic systems
-            for autism.
-          </li>
-        </ul>
-        <p class="keywords">
-          Keywords: social robots, assistive technology, prototyping
-        </p>
+        <article class="item">
+          <div class="item-text">
+            <h3>Undergraduate Research Assistant – Machine Intelligence &amp; Bio-Motion Lab</h3>
+            <p class="meta-line">
+              NIT Rourkela · Nov 2023 – Jun 2024 · Advisor: Dr. Anup Nandy
+            </p>
+            <p class="small">
+              Contributed to the design and prototyping of a dual-arm social robot for
+              children with autism, leading to a filed Indian patent.
+            </p>
+            <div class="item-actions">
+              <a class="btn" href="experience-miblab-ura.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/exp-miblab.jpg" alt="Social robot prototype" />
+          </div>
+        </article>
       </section>
 
       <!-- Projects -->
       <section id="projects">
         <h2>Projects &amp; research</h2>
 
-        <h3>Flatness-based control of a Cart–Pendulum system</h3>
-        <p class="meta-line">Self-project · Sept 2025 – Present</p>
-        <ul>
-          <li>
-            Derived nonlinear dynamics of a cart with inverted pendulum using
-            Lagrangian mechanics and implemented state-space models.
-          </li>
-          <li>
-            Designed pole-placement and LQR controllers for stabilisation;
-            currently exploring flatness-based rest-to-rest trajectory planning
-            for non-inverted pendulum motion.
-          </li>
-        </ul>
+        <article class="item">
+          <div class="item-text">
+            <h3>Flatness-based control of a cart–pendulum system</h3>
+            <p class="meta-line">Independent project · 2025 – Ongoing</p>
+            <p class="small">
+              Nonlinear modelling of a cart with pendulum and exploration of flatness-based
+              rest-to-rest motion planning and stabilisation around upright equilibrium.
+            </p>
+            <div class="item-actions">
+              <a class="btn" href="project-cart-pendulum.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/proj-cart-pendulum.jpg" alt="Cart pendulum illustration" />
+          </div>
+        </article>
 
-        <h3>Autonomous Underwater Vehicle – design &amp; hydrodynamics</h3>
-        <p class="meta-line">
-          Team Tiburon, AUV NIT Rourkela · Dec 2021 – Jun 2024
-        </p>
-        <ul>
-          <li>
-            Designed a modular AUV frame with eight thrusters for full 6-DOF
-            control and significant payload capability.
-          </li>
-          <li>
-            Performed structural FEA of the chassis under hydrostatic loading
-            using ANSYS and checked safety margins for operating depths.
-          </li>
-          <li>
-            Studied ROV hydrodynamics and the impact of ambient currents on
-            vehicle dynamics and control.
-          </li>
-        </ul>
-        <p class="keywords">
-          Keywords: AUVs, hydrodynamics, ANSYS, MATLAB/Simulink
-        </p>
+        <article class="item">
+          <div class="item-text">
+            <h3>Autonomous Underwater Vehicle – design &amp; hydrodynamics</h3>
+            <p class="meta-line">Team Tiburon, AUV NIT Rourkela · 2021 – 2024</p>
+            <p class="small">
+              Designed a modular AUV frame with eight thrusters, performed structural
+              FEA, and studied hydrodynamic effects of currents on vehicle control.
+            </p>
+            <div class="item-actions">
+              <a class="btn" href="project-auv.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/proj-auv.jpg" alt="AUV render or photo" />
+          </div>
+        </article>
 
-        <h3>
-          E-human powered vehicle with landing gear, ROPS, and electric
-          powertrain
-        </h3>
-        <p class="meta-line">
-          Team BlueStreak, ASME NIT Rourkela · May 2021 – Apr 2023
-        </p>
-        <ul>
-          <li>
-            Designed a semi-recumbent chassis and performed ergonomic analysis
-            for multiple percentile manikins to optimise rider posture and
-            visibility.
-          </li>
-          <li>
-            Analysed rollover protection structures and refined triangulation to
-            reduce deformation and meet competition criteria.
-          </li>
-          <li>
-            Developed a Simscape landing-gear mechanism for stable starts and
-            stops and carried out powertrain sizing and gear-ratio optimisation
-            in MATLAB/Simulink.
-          </li>
-        </ul>
-        <p class="keywords">
-          Keywords: vehicle dynamics, human-powered vehicles, EV drive design
-        </p>
+        <article class="item">
+          <div class="item-text">
+            <h3>E-human powered vehicle with landing gear and electric powertrain</h3>
+            <p class="meta-line">Team BlueStreak, ASME NIT Rourkela · 2021 – 2023</p>
+            <p class="small">
+              Led design of chassis, ROPS, landing-gear mechanism and EV powertrain sizing
+              for a semi-recumbent vehicle competing at ASME e-HPVC India.
+            </p>
+            <div class="item-actions">
+              <a class="btn" href="project-e-hpvc.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/proj-hpvc.jpg" alt="Human powered vehicle" />
+          </div>
+        </article>
       </section>
 
       <!-- Education -->
       <section id="education">
         <h2>Education</h2>
 
-        <h3>National Institute of Technology, Rourkela</h3>
-        <p class="meta-line">
-          B.Tech in Mechanical Engineering · June 2024 · CGPA 8.87/10 (Rank 12
-          / 144)
-        </p>
-        <p class="small">
-          Focus areas include dynamics, vibrations, control systems, and
-          mechatronics. Actively involved in AUV and human-powered vehicle teams
-          and student mentoring.
-        </p>
+        <article class="item">
+          <div class="item-text">
+            <h3>National Institute of Technology, Rourkela</h3>
+            <p class="meta-line">
+              B.Tech in Mechanical Engineering · 2020 – 2024 · CGPA 8.87/10 (Rank 12/144)
+            </p>
+            <p class="small">
+              Focus on dynamics, vibrations, control, and mechatronics. Active in AUV and
+              human-powered vehicle teams, along with mentoring and leadership roles.
+            </p>
+            <div class="item-actions">
+              <a class="btn" href="education-nitr.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/edu-nitr.jpg" alt="NIT Rourkela campus" />
+          </div>
+        </article>
 
-        <h3>St. Paul’s School, Rourkela (ISC)</h3>
-        <p class="meta-line">
-          Intermediate – Science &amp; Mathematics · May 2019 · 93.2%
-        </p>
+        <article class="item">
+          <div class="item-text">
+            <h3>St. Paul’s School, Rourkela (ISC)</h3>
+            <p class="meta-line">Class XII – Science &amp; Mathematics · 2017 – 2019 · 93.2%</p>
+            <div class="item-actions">
+              <a class="btn" href="education-stpaul-isc.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/edu-isc.jpg" alt="School building" />
+          </div>
+        </article>
 
-        <h3>St. Paul’s School, Rourkela (ICSE)</h3>
-        <p class="meta-line">
-          Matriculation – General Studies · May 2017 · 97.0%
-        </p>
+        <article class="item">
+          <div class="item-text">
+            <h3>St. Paul’s School, Rourkela (ICSE)</h3>
+            <p class="meta-line">Class X · 2015 – 2017 · 97.0%</p>
+            <div class="item-actions">
+              <a class="btn" href="education-stpaul-icse.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/edu-icse.jpg" alt="School campus" />
+          </div>
+        </article>
       </section>
 
       <!-- Coursework -->
       <section id="coursework">
         <h2>Coursework</h2>
-        <p class="small">Selected courses, grouped by theme.</p>
+        <p class="small">Selected courses grouped by theme.</p>
 
         <div class="two-column">
           <div>
@@ -586,16 +355,12 @@
               <li>Engineering Mathematics</li>
             </ul>
           </div>
-
           <div>
             <div class="subheading">Design, analysis &amp; computation</div>
             <ul>
               <li>Finite Element Method</li>
               <li>Machine Dynamics with MATLAB (MOOC)</li>
-              <li>
-                Model-based Automotive Systems, Vibrations &amp; Structural
-                Dynamics (NPTEL / edX)
-              </li>
+              <li>Courses on structural dynamics and automotive systems modelling</li>
             </ul>
           </div>
         </div>
@@ -604,7 +369,6 @@
       <!-- Skills -->
       <section id="skills">
         <h2>Skills</h2>
-
         <div class="two-column">
           <div>
             <div class="subheading">Programming &amp; tools</div>
@@ -612,25 +376,21 @@
               <li>Python</li>
               <li>MATLAB &amp; Simulink</li>
               <li>LabVIEW</li>
-              <li>C++</li>
-              <li>Java</li>
               <li>SolidWorks</li>
               <li>ANSYS</li>
               <li>Simscape Multibody</li>
-              <li>Arduino</li>
+              <li>Arduino / NI myRIO / cRIO</li>
               <li>AutoCAD</li>
-              <li>Siemens-NX</li>
-              <li>NI myRIO / cRIO</li>
+              <li>LaTeX</li>
             </ul>
           </div>
           <div>
-            <div class="subheading">Other</div>
+            <div class="subheading">Soft skills &amp; interests</div>
             <ul class="pill-list">
-              <li>LaTeX</li>
               <li>Technical writing</li>
-              <li>Presentation &amp; mentoring</li>
+              <li>Mentoring &amp; leadership</li>
               <li>Hindustani classical violin</li>
-              <li>Fine arts</li>
+              <li>Fine arts &amp; sketching</li>
             </ul>
           </div>
         </div>
@@ -640,38 +400,33 @@
       <section id="leadership">
         <h2>Leadership &amp; mentoring</h2>
 
-        <h3>Training Coordinator – Career Development Center</h3>
-        <p class="meta-line">NIT Rourkela · Jan 2024 – Jun 2024</p>
-        <ul>
-          <li>
-            Organised resume workshops, alumni webinars, GDs, and mock
-            interviews for 250+ mechanical engineering students.
-          </li>
-        </ul>
+        <article class="item">
+          <div class="item-text">
+            <h3>Training Coordinator – Career Development Center</h3>
+            <p class="meta-line">NIT Rourkela · Jan 2024 – Jun 2024</p>
+            <p class="small">
+              Organised resume workshops, alumni talks, mock interviews, and GDs
+              for 250+ mechanical engineering students.
+            </p>
+          </div>
+          <div class="item-image">
+            <img src="images/lead-cdc.jpg" alt="CDC event" />
+          </div>
+        </article>
 
-        <h3>Captain – Team BlueStreak</h3>
-        <p class="meta-line">ASME NIT Rourkela · May 2022 – Apr 2023</p>
-        <ul>
-          <li>
-            Led a 25-member multidisciplinary team for ASME e-HPVC India 2023,
-            coordinating design, fabrication, testing, and vendor management.
-          </li>
-          <li>
-            Conducted training for 30+ new members to ensure continuity of
-            design and manufacturing practices.
-          </li>
-        </ul>
-
-        <h3>Student Mentor – Mechanical Engineering</h3>
-        <p class="meta-line">
-          Institute Counselling Services, NIT Rourkela · May 2022 – Apr 2023
-        </p>
-        <ul>
-          <li>
-            Supported first-year students with academic planning and adapting to
-            campus life, focusing on both technical and personal growth.
-          </li>
-        </ul>
+        <article class="item">
+          <div class="item-text">
+            <h3>Captain – Team BlueStreak, ASME NIT Rourkela</h3>
+            <p class="meta-line">May 2022 – Apr 2023</p>
+            <p class="small">
+              Led a 25-member multidisciplinary team for ASME e-HPVC India 2023, coordinating design,
+              fabrication, testing, vendor management, and junior training.
+            </p>
+          </div>
+          <div class="item-image">
+            <img src="images/lead-bluestreak.jpg" alt="Team BlueStreak" />
+          </div>
+        </article>
       </section>
 
       <!-- Contact -->
@@ -683,16 +438,11 @@
         </p>
         <p>
           Email:
-          <a href="mailto:sarthaks.mech2024@gmail.com"
-            >sarthaks.mech2024@gmail.com</a
-          ><br />
+          <a href="mailto:sarthaks.mech2024@gmail.com">sarthaks.mech2024@gmail.com</a><br />
           LinkedIn:
-          <a
-            href="https://www.linkedin.com/in/sarthak-sahoo-mechanical/"
-            target="_blank"
-            rel="noopener noreferrer"
-            >sarthak-sahoo-mechanical</a
-          >
+          <a href="https://www.linkedin.com/in/sarthak-sahoo-mechanical/" target="_blank" rel="noopener noreferrer">
+            sarthak-sahoo-mechanical
+          </a>
         </p>
       </section>
     </main>
@@ -703,9 +453,34 @@
   </div>
 
   <script>
-    // Set current year in footer
-    document.getElementById("year").textContent =
-      new Date().getFullYear().toString();
+    (function () {
+      const body = document.body;
+      const btn = document.getElementById("theme-toggle");
+
+      function setTheme(mode) {
+        if (mode === "dark") {
+          body.classList.add("dark");
+          btn.textContent = "☀️";
+          btn.setAttribute("aria-label", "Switch to light mode");
+        } else {
+          body.classList.remove("dark");
+          btn.textContent = "🌙";
+          btn.setAttribute("aria-label", "Switch to dark mode");
+        }
+        localStorage.setItem("theme", mode);
+      }
+
+      const saved = localStorage.getItem("theme");
+      setTheme(saved === "dark" ? "dark" : "light");
+
+      btn.addEventListener("click", () => {
+        const next = body.classList.contains("dark") ? "light" : "dark";
+        setTheme(next);
+      });
+
+      document.getElementById("year").textContent =
+        new Date().getFullYear().toString();
+    })();
   </script>
 </body>
 </html>

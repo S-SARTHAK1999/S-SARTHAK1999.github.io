@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Summer Octane Intern – Bajaj Auto | Sarthak Sahoo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+<div class="page">
+  <header>
+    <nav class="top-nav">
+      <div class="nav-links">
+        <a href="index.html#experience">← Back to experience</a>
+      </div>
+      <button id="theme-toggle" class="toggle-theme" type="button" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+  <main>
+    <article class="detail">
+      <h1>Summer Octane Intern – Manufacturing Engineering</h1>
+      <p class="meta-line">Bajaj Auto Limited, Pune · May 2023 – Jul 2023</p>
+      <img class="detail-image" src="images/exp-bajaj-summer.jpg" alt="Assembly line" />
+
+      <p>
+        This internship introduced me to end-to-end manufacturing engineering on
+        high-volume motorcycle lines.
+      </p>
+      <ul>
+        <li>Mapped material and information flow for Pulsar assembly and identified bottlenecks.</li>
+        <li>Audited 20+ poka-yokes for coverage, false-rejection rate, and maintainability.</li>
+        <li>Helped standardise digital dashboards for line-stage quality metrics on the MES.</li>
+      </ul>
+
+      <p><a class="btn" href="index.html#experience">Back to main page</a></p>
+    </article>
+  </main>
+  <footer>&copy; <span id="year"></span> Sarthak Sahoo</footer>
+</div>
+
+<script>
+(function () {
+  const body = document.body;
+  const btn = document.getElementById("theme-toggle");
+  function setTheme(mode) {
+    if (mode === "dark") { body.classList.add("dark"); btn.textContent = "☀️"; }
+    else { body.classList.remove("dark"); btn.textContent = "🌙"; }
+    localStorage.setItem("theme", mode);
+  }
+  const saved = localStorage.getItem("theme");
+  setTheme(saved === "dark" ? "dark" : "light");
+  btn.addEventListener("click", () => {
+    setTheme(body.classList.contains("dark") ? "light" : "dark");
+  });
+  document.getElementById("year").textContent =
+    new Date().getFullYear().toString();
+})();
+</script>
+
+</body>
+</html>
