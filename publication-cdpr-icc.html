@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Design, Fabrication and Control of a Cable-Driven Parallel Robot | Sarthak Sahoo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <div class="page">
+    <header>
+      <nav class="top-nav">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="education.html">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="publications.html">Publications &amp; patents</a>
+          <a href="leadership.html">Leadership &amp; mentoring</a>
+          <a href="coursework.html">Coursework</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article class="detail">
+        <h1>Design, Fabrication and Control of a Cable-Driven Parallel Robot</h1>
+        <img class="detail-image" src="images/pub-cdpr.jpg" alt="CDPR experimental setup" />
+        
+        <p>
+          This work presents the complete pipeline of building a planar
+          cable-driven parallel robot (CDPR) from scratch and experimentally
+          validating its motion control.
+        </p>
+        <ul>
+          <li>Formulated kinematics and dynamics for an underactuated CDPR with three cables.</li>
+          <li>Designed the robot structure and winch assembly in SolidWorks and fabricated the setup using aluminum profiles and 3D-printed fixtures.</li>
+          <li>Performed motor sizing for low-speed smooth operation and integrated encoders for feedback.</li>
+          <li>Implemented trajectory-tracking controllers in MATLAB/Simulink and validated them on the physical platform.</li>
+        </ul>
+
+        <p>
+          The resulting platform continues to be used in the CDC Lab for
+          experimental studies on nonlinear control and trajectory planning.
+        </p>
+
+        <p><a class="btn" href="publications.html">Back</a></p>
+      </article>
+    </main>
+    <footer>
+      &copy; <span id="year"></span> Sarthak Sahoo
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear().toString();
+  </script>
+
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Coursework | Sarthak Sahoo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <div class="page">
+    <header>
+      <nav class="top-nav">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="education.html">Education</a>
+          <a href="experience.html">Experience</a>
+          <a href="projects.html">Projects</a>
+          <a href="publications.html">Publications &amp; patents</a>
+          <a href="leadership.html">Leadership &amp; mentoring</a>
+          <a href="coursework.html">Coursework</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="coursework">
+        <h2>Coursework</h2>
+        <p class="small">Selected courses grouped by theme.</p>
+
+        <div class="two-column">
+          <div>
+            <div class="subheading">Robotics, dynamics &amp; control</div>
+            <ul>
+              <li>System Dynamics and Control</li>
+              <li>Mechanical Vibrations</li>
+              <li>Dynamics of Machines</li>
+              <li>Mechatronics</li>
+              <li>Engineering Mathematics</li>
+            </ul>
+          </div>
+          <div>
+            <div class="subheading">Design, analysis &amp; computation</div>
+            <ul>
+              <li>Finite Element Method</li>
+              <li>Machine Dynamics with MATLAB (MOOC)</li>
+              <li>Courses on structural dynamics and automotive systems modelling</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Sarthak Sahoo
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear().toString();
+  </script>
+
+</body>
+</html>
