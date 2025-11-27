@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Education | Sarthak Sahoo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="dark">
+  <div class="page">
+    <header>
+      <nav class="top-nav">
+        <div class="nav-links">
+          <a href="index.html">Home</a>
+          <div class="dropdown">
+            <button class="dropdown-toggle" type="button">Sections ▾</button>
+            <div class="dropdown-menu">
+              <a href="education.html">Education</a>
+              <a href="experience.html">Experience</a>
+              <a href="projects.html">Projects</a>
+              <a href="publications.html">Publications &amp; patents</a>
+              <a href="leadership.html">Leadership &amp; mentoring</a>
+              <a href="coursework.html">Coursework</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section id="education">
+        <h2>Education</h2>
+
+        <article class="item">
+          <div class="item-text">
+            <h3>National Institute of Technology, Rourkela</h3>
+            <p class="meta-line">
+              B.Tech in Mechanical Engineering · 2020 – 2024 · CGPA 8.87/10 (Rank 12/144)
+            </p>
+            <p class="small">
+              Focus on dynamics, vibrations, control, and mechatronics. Active in AUV and
+              human-powered vehicle teams, along with mentoring and leadership roles.
+            </p>
+            <div class="item-actions">
+              <a class="btn" href="education-nitr.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/edu-nitr.jpg" alt="NIT Rourkela campus" />
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="item-text">
+            <h3>St. Paul’s School, Rourkela (ISC)</h3>
+            <p class="meta-line">Class XII – Science &amp; Mathematics · 2017 – 2019 · 93.2%</p>
+            <div class="item-actions">
+              <a class="btn" href="education-stpaul-isc.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/edu-isc.jpg" alt="School building" />
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="item-text">
+            <h3>St. Paul’s School, Rourkela (ICSE)</h3>
+            <p class="meta-line">Class X · 2015 – 2017 · 97.0%</p>
+            <div class="item-actions">
+              <a class="btn" href="education-stpaul-icse.html">View details</a>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="images/edu-icse.jpg" alt="School campus" />
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      &copy; <span id="year"></span> Sarthak Sahoo
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear().toString();
+  </script>
+
+</body>
+</html>
